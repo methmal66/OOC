@@ -1,13 +1,4 @@
-class Rectangle {
-private:
-    int width;
-    int length;
-
-public:
-    void setWidth(int);
-    void setLength(int);
-    int calculateArea();
-};
+#include "Rectangle.hpp"
 
 void Rectangle::setWidth(int x) {
     width = x;
