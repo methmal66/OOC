@@ -17,10 +17,12 @@ string Student::getName() {
     return name;
 }
 
-int Student::getMarks(int no) {
-    if (no == 1)return marks1;
-    if (no == 2) return marks2;
-    if (no == 3) return marks3;
+int* Student::getMarks() {
+    int* marks = (int*)malloc(sizeof(int) * 3);
+    *marks = marks1;
+    *(marks + 1) = marks2;
+    *(marks + 2) = marks3;
+    return marks;
 }
 
 void Student::assignMarks(int m1, int m2, int m3) {

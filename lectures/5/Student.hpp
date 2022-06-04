@@ -16,7 +16,7 @@ public:
 
     int getStudentNo();
     string getName();
-    int getMarks(int);
+    int* getMarks();
 
     void assignMarks(int, int, int);
     float calculateAverage();
